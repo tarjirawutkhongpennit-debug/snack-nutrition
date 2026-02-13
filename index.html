@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>เว็บคำนวณโภชนาการ</title>
+</head>
+<body>
+  <h1>เว็บคำนวณโภชนาการผักผลไม้อบกรอบ</h1>
+
+  <p>เลือกวัตถุดิบ</p>
+
+  <select id="food">
+    <option value="มะเขือเทศ">มะเขือเทศ</option>
+    <option value="แครอท">แครอท</option>
+    <option value="กล้วย">กล้วย</option>
+  </select>
+
+  <button onclick="calc()">คำนวณ</button>
+
+  <p id="result"></p>
+
+  <script>
+    function calc() {
+      const food = document.getElementById("food").value;
+      document.getElementById("result").innerHTML =
+        food + "<br>วิตามิน 70%<br>พลังงานจากส่วนผสมอื่น 30%";
+    }
+  </script>
+</body>
+</html>
